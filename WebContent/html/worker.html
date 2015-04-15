@@ -18,6 +18,7 @@
 
 		worker.onmessage = function(e) { // js에서 보낸 데이터를 받는곳.
 			$('#sum').text('Sum: ' + e.data);
+			alert(e.data);
 		};
 		worker.error = function(e) {
 		};
