@@ -21,7 +21,7 @@ var serverCall = function(){
 	var st = document.querySelector('#st');
 	var output = '';
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET','http://localhost:8080/Html5/server/date.jsp', false); // true 면 동기
+	xhr.open('GET','http://localhost:8080/WebStudy/server/date.jsp', false); // true 면 동기
 	xhr.send();
 	output = xhr.responseText;
 	st.innerHTML = output;			
